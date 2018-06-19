@@ -22,4 +22,5 @@ public class LoginActivity extends AppCompatActivity {
         password_EditText = (EditText) findViewById(R.id.password_et);
         password_EditText.setHint("#fff");
     }
+    //edited by pooja
 }
