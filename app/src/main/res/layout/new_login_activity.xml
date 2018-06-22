@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1.7"
+    android:background="@drawable/gps3"
+    tools:context=".NewLoginActivity">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:background="@color/black" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/gaurd"
+        />
+    <EditText
+        android:id="@+id/et_txtemail_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="47dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Enter User Email"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/et_txtpass_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_txtemail_signin"
+        android:layout_alignLeft="@+id/et_txtemail_signin"
+        android:layout_alignRight="@+id/et_txtemail_signin"
+        android:layout_alignStart="@+id/et_txtemail_signin"
+        android:layout_below="@+id/et_txtemail_signin"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableLeft="@drawable/ic_https_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter User Passwrod"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+
+        android:id="@+id/tv_forgotpass_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_txtpass_signin"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Forgot Password ?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_15sdp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_signin_signin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_txtpass_signin"
+        android:layout_alignLeft="@+id/et_txtpass_signin"
+        android:layout_alignRight="@+id/et_txtpass_signin"
+        android:layout_alignStart="@+id/et_txtpass_signin"
+        android:layout_below="@+id/tv_forgotpass_signin"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/button_bg"
+        android:text="SIGN IN"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_below="@+id/social_login_layout"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_signin_signin"
+        android:layout_alignLeft="@+id/btn_signin_signin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_signin_signin"
+        android:layout_alignStart="@+id/btn_signin_signin"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:alpha="0.6"
+        android:gravity="center_horizontal"
+        android:text="poojashende0108@gmail.com |8624869022| 9175322111 | preetishahu@gmail.com | 73850145455 | "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+    <!-- <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:text="Forgot Password ?"
+         android:id="@+id/btnreg"
+         android:textColor="#ffffff"
+         android:layout_marginTop="@dimen/_15sdp"
+         android:layout_below="@+id/btnsignin"
+        android:layout_alignParentRight="true"
+         android:layout_marginRight="@dimen/_20sdp"
+
+         />-->
+       <RelativeLayout
+           android:layout_marginTop="@dimen/_20sdp"
+           android:layout_below="@+id/btn_signin_signin"
+           android:id="@+id/social_login_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+
+           <ImageView
+               android:id="@+id/fb_btn_signin"
+               android:layout_width="@dimen/_60sdp"
+               android:layout_height="@dimen/_60sdp"
+               android:layout_marginRight="@dimen/_20sdp"
+               android:src="@drawable/fb_btn" />
+
+           <ImageView
+               android:id="@+id/google_btn_signin"
+               android:layout_width="@dimen/_60sdp"
+               android:layout_height="@dimen/_60sdp"
+               android:layout_marginLeft="@dimen/_20sdp"
+               android:layout_toRightOf="@+id/fb_btn_signin"
+               android:src="@drawable/google" />
+       </RelativeLayout>
+</RelativeLayout>

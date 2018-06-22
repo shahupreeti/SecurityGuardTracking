@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+   <!-- <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#01aee7</color>
+    <color name="colorPrimaryDark">#18ccd9</color>
+    <color name="colorAccent">#f9c4d8</color>
 
     <color name="dot_light_screen1">#f98da5</color>
     <color name="dot_light_screen2">#8cf9eb</color>
@@ -18,6 +22,9 @@
     <color name="dot_dark_screen2">#14a895</color>
     <color name="dot_dark_screen3">#2278d4</color>
 
+    <color name="gray">#a19e9e</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>
